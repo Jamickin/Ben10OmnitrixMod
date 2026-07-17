@@ -1,0 +1,12 @@
+== BEN 10 MOD ==
+
+Bones-first build of an Omnitrix transformation system for Terraria, inspired by the classic 2005 Ben 10 series.
+
+CURRENT SCOPE (v0.1.0):
+- Full transform/revert framework: energy meter, cooldown, mutual exclusivity between forms
+- Hold-to-open alien selection wheel, release to confirm
+- Short transformation transition effect (placeholder flash + sound, cinematics later)
+- The classic 10 aliens as a foundation: Heatblast, Four Arms, XLR8, Diamondhead, Grey Matter, Stinkfly, Ripjaws, Upgrade, Ghostfreak, Wildmutt
+- No custom art/textures yet - this pass is the mechanical skeleton
+
+More aliens, unique per-alien ability kits, full art, and longer cinematic transformation sequences are planned for later updates.

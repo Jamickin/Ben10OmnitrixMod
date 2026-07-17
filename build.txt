@@ -1,0 +1,4 @@
+name = Ben10OmnitrixMod
+displayName = Ben 10 Omnitrix
+author = James Wheeler
+version = 0.1.0

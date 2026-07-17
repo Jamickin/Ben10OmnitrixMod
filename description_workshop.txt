@@ -1,0 +1,22 @@
+[b][u]BEN 10 MOD[/u][/b]
+
+Turn into classic Ben 10 aliens using an Omnitrix-style transformation system!
+
+[b]v0.1.0 - Bones Release[/b]
+This is an early "framework" build - the transformation system is fully functional, but alien art and unique per-alien abilities are still in progress.
+
+FEATURES:
+- Hold the Transform key to open the alien selection wheel, release to confirm
+- Energy meter limits how long you can stay transformed
+- Cooldown after reverting before you can transform again
+- Only one alien form active at a time
+- The classic 10: Heatblast, Four Arms, XLR8, Diamondhead, Grey Matter, Stinkfly, Ripjaws, Upgrade, Ghostfreak, Wildmutt
+
+COMING LATER:
+- Full alien art and animations
+- Unique ability kits per alien
+- Longer cinematic transformation sequences
+- More aliens beyond the original 10
+
+Credits:
+- Mod created by James Wheeler

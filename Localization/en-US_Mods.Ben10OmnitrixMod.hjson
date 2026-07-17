@@ -1,0 +1,86 @@
+Buffs: {
+	HeatblastBuff: {
+		DisplayName: Heatblast
+		Description: Burning hot! Damage is increased.
+	}
+
+	FourArmsBuff: {
+		DisplayName: Four Arms
+		Description: Four arms, four times the strength! Damage is greatly increased.
+	}
+
+	XLR8Buff: {
+		DisplayName: XLR8
+		Description: The fastest thing alive! Movement speed is greatly increased.
+	}
+
+	DiamondheadBuff: {
+		DisplayName: Diamondhead
+		Description: Living crystal! Defense is greatly increased.
+	}
+
+	GreyMatterBuff: {
+		DisplayName: Grey Matter
+		Description: Super-intelligent, but slow and fragile. Movement speed is reduced.
+	}
+
+	StinkflyBuff: {
+		DisplayName: Stinkfly
+		Description: Winged and buoyant! Movement speed is increased.
+	}
+
+	RipjawsBuff: {
+		DisplayName: Ripjaws
+		Description: Tough hide! Defense is increased.
+	}
+
+	UpgradeBuff: {
+		DisplayName: Upgrade
+		Description: Living technology! Defense is increased.
+	}
+
+	GhostfreakBuff: {
+		DisplayName: Ghostfreak
+		Description: Ethereal and quick! Movement speed is increased.
+	}
+
+	WildmuttBuff: {
+		DisplayName: Wildmutt
+		Description: Feral instincts! Damage is increased.
+	}
+}
+
+Configs: {
+}
+
+Keybinds: {
+	"Open Omnitrix.DisplayName": Open  Omnitrix
+	"Revert Alien Form.DisplayName": Revert  Alien  Form
+	"Cycle Alien Left.DisplayName": Cycle  Alien  Left
+	"Cycle Alien Right.DisplayName": Cycle  Alien  Right
+	"Alien Ability 2.DisplayName": Alien  Ability 2
+	"Alien Ability 3.DisplayName": Alien  Ability 3
+}
+
+Projectiles: {
+	AlienDashBolt.DisplayName: Alien Dash Bolt
+	DiamondheadShard.DisplayName: Diamondhead Shard
+	DiamondheadSpikes.DisplayName: Diamondhead Spikes
+	FourArmsGroundPound.DisplayName: Four Arms Ground Pound
+	FourArmsPunch.DisplayName: Four Arms Punch
+	GhostfreakClaw.DisplayName: Ghostfreak Claw
+	GhostfreakDarkBurst.DisplayName: Ghostfreak Dark Burst
+	GreyMatterEMP.DisplayName: Grey Matter E M P
+	GreyMatterZap.DisplayName: Grey Matter Zap
+	HeatblastFireball.DisplayName: Heatblast Fireball
+	HeatblastFlameNova.DisplayName: Heatblast Flame Nova
+	RipjawsBite.DisplayName: Ripjaws Bite
+	RipjawsFinSlash.DisplayName: Ripjaws Fin Slash
+	StinkflyGoo.DisplayName: Stinkfly Goo
+	StinkflyGooBomb.DisplayName: Stinkfly Goo Bomb
+	UpgradeLaser.DisplayName: Upgrade Laser
+	UpgradeOverload.DisplayName: Upgrade Overload
+	WildmuttClaw.DisplayName: Wildmutt Claw
+	WildmuttRoar.DisplayName: Wildmutt Roar
+	XLR8Slash.DisplayName: X L R8 Slash
+}
