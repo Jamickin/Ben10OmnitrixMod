@@ -8,6 +8,12 @@ This is **Ben10OmnitrixMod**, a tModLoader mod for Terraria implementing an Omni
 
 Current scope: the transformation *framework* (energy, cooldown, mutual exclusivity, save/load, multiplayer sync) working end-to-end for the classic 10 aliens (Heatblast, Four Arms, XLR8, Diamondhead, Grey Matter, Stinkfly, Ripjaws, Upgrade, Ghostfreak, Wildmutt), with a short placeholder transition effect. Each alien also has a full 3-ability combat kit (see below). No character art yet — UI and buff icons use placeholder assets.
 
+### Collaboration / project status
+
+- Repo is public and live: https://github.com/Jamickin/Ben10OmnitrixMod
+- This is now a collaborative project — actively looking for help with sprites/art, and coordinating with the author of a separate, pre-existing "Ben 10" mod on the Steam Workshop (item ID `3112814068`, internal name `Ben10Mod`, currently at v0.93+). That mod's existing internal name is exactly why this project's internal identifier is `Ben10OmnitrixMod` rather than `Ben10Mod` — see the git history around the folder-rename commit for the full story (tModLoader derives a mod's true internal identity from its *source folder name*, not the `.csproj`/namespace/`build.txt`, which is a real gotcha worth knowing before renaming anything again).
+- If merging ideas/assets with that other mod becomes concrete, treat it as a deliberate decision (architecture, roster overlap, licensing of contributed art) — don't silently absorb code from an external source without the human in the loop reviewing it first.
+
 ### Controls
 
 - **T** — open/confirm the Omnitrix dial (see `OmnitrixDialUI` below)
