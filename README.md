@@ -1,8 +1,8 @@
 # Ben 10 Omnitrix Mod
 
-A [tModLoader](https://tmodloader.net/) mod for Terraria that brings an Omnitrix-style alien transformation system into the game, inspired by the classic 2005 *Ben 10* series.
+A [tModLoader](https://tmodloader.net/) mod for Terraria that brings a story-based, immersive Omnitrix-style alien transformation system into the game, inspired by the classic 2005 *Ben 10* series.
 
-**Status: bones/mechanics pass.** The full transformation framework and a 3-ability combat kit for all 10 classic aliens are working end-to-end. There is no character art yet — everything currently renders with placeholder colors/shapes.
+**Status: bones/mechanics pass.** The full transformation framework and a 3-ability combat kit for all 10 classic aliens are working end-to-end. There is no character art yet — everything currently renders with placeholder colors/shapes. The story campaign, deeper progression, and richer combat/UI this project is building toward are still ahead — see "Project history" below for a note on how they're being built.
 
 ## Features
 
@@ -12,6 +12,14 @@ A [tModLoader](https://tmodloader.net/) mod for Terraria that brings an Omnitrix
 - **Full multiplayer sync** — transformation state and unlocked aliens sync across clients.
 - **A real 3-ability combat kit per alien** (Ability 1/2/3), not just a stat-swap — weapon/item use is disabled entirely while transformed, so aliens fight with their own powers.
 - **The classic 10**: Heatblast, Four Arms, XLR8, Diamondhead, Grey Matter, Stinkfly, Ripjaws, Upgrade, Ghostfreak, Wildmutt.
+
+## Story
+
+This mod is built around an original campaign — its own multiverse take on Ben 10, not mainline canon. See [`docs/Story.md`](docs/Story.md) for the full narrative design (still evolving, actively being workshopped).
+
+## Project history
+
+An addon collaboration with a separate, pre-existing "Ben 10" tModLoader mod (Steam Workshop, by a different author) was explored and has been explicitly rejected. This project is fully independent — no code, architecture, assets, or design from that other mod is used or referenced. It was briefly evaluated as a potential collaboration, that evaluation is closed, and development here continues from scratch, on this project's own terms.
 
 ## Controls
 
@@ -34,9 +42,10 @@ dotnet build
 
 ## Contributing
 
-This is an active, collaborative project — help is very welcome, especially with:
+This is an active project — help is very welcome, especially with:
 
 - **Sprites/art** — the biggest gap right now. Alien sprites, transformation VFX, UI art, buff icons.
+- **Story/writing** — campaign structure, dialogue, quest pacing.
 - **Sound design** — transformation sounds, ability sound effects.
 - **Balance/gameplay feedback** — once you've tried the 10 kits in-game.
 
@@ -45,7 +54,6 @@ If you want to contribute, open an issue or PR, or reach out directly. See [`CLA
 ## Credits
 
 - Mod created by James Wheeler ([@Jamickin](https://github.com/Jamickin))
-- Built in collaboration with the author of a separate, earlier Ben 10 tModLoader mod — coordination in progress
 
 ## Related
 

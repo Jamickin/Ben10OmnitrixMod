@@ -4,15 +4,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is **Ben10OmnitrixMod**, a tModLoader mod for Terraria implementing an Omnitrix-style alien transformation system, inspired by the original 2005 Ben 10 series. Built using C# and the tModLoader framework, structured following the sibling `MistbornModOwnBlend` project's conventions.
+This is **Ben10OmnitrixMod**, a fully independent, story-based and immersive tModLoader mod implementing an Omnitrix-style alien transformation system for Terraria, inspired by the original 2005 Ben 10 series. Built using C# and the tModLoader framework, structured following the sibling `MistbornModOwnBlend` project's conventions.
 
-Current scope: the transformation *framework* (energy, cooldown, mutual exclusivity, save/load, multiplayer sync) working end-to-end for the classic 10 aliens (Heatblast, Four Arms, XLR8, Diamondhead, Grey Matter, Stinkfly, Ripjaws, Upgrade, Ghostfreak, Wildmutt), with a short placeholder transition effect. Each alien also has a full 3-ability combat kit (see below). No character art yet — UI and buff icons use placeholder assets.
+Current scope: the transformation *framework* (energy, cooldown, mutual exclusivity, save/load, multiplayer sync) working end-to-end for the classic 10 aliens (Heatblast, Four Arms, XLR8, Diamondhead, Grey Matter, Stinkfly, Ripjaws, Upgrade, Ghostfreak, Wildmutt), with a short placeholder transition effect. Each alien also has a full 3-ability combat kit (see below). No character art yet — UI and buff icons use placeholder assets. The long-term goal (story campaign, deeper progression, richer combat/UI) is being designed and built from scratch in this repo — see "Project history" below for what that does *not* mean.
 
-### Collaboration / project status
+### Project history
+
+An addon collaboration with a separate, pre-existing "Ben 10" tModLoader mod (Steam Workshop item ID `3112814068`, internal name `Ben10Mod`, by a different author) was explored and has been **explicitly rejected**. That author's codebase was briefly checked out locally (`Ben10Mod-his`) to evaluate an addon/collaboration arrangement; it has since been deleted from this workspace and was never merged, imported, or built against.
+
+**This project is fully independent.** No code, architecture, assets, UI design, class structure, or naming from that other mod is used, ported, or referenced going forward — not even as "inspiration" for internal architecture. If a design decision here happens to resemble something in that mod, that's coincidence from both being tModLoader Ben 10 mods, not derivation. Do not open, clone, or reference that mod's repository when working on this project; if you need prior art for a pattern, look at tModLoader's own docs/examples or this repo's own `MistbornModOwnBlend` sibling instead.
+
+The mod's internal identifier `Ben10OmnitrixMod` (distinct from the other mod's `Ben10Mod`) predates and is unrelated to this decision — it was chosen originally just to avoid an internal-name collision. tModLoader derives a mod's true internal identity from its *source folder name*, not the `.csproj`/namespace/`build.txt`, which is a real gotcha worth knowing before renaming anything.
 
 - Repo is public and live: https://github.com/Jamickin/Ben10OmnitrixMod
-- This is now a collaborative project — actively looking for help with sprites/art, and coordinating with the author of a separate, pre-existing "Ben 10" mod on the Steam Workshop (item ID `3112814068`, internal name `Ben10Mod`, currently at v0.93+). That mod's existing internal name is exactly why this project's internal identifier is `Ben10OmnitrixMod` rather than `Ben10Mod` — see the git history around the folder-rename commit for the full story (tModLoader derives a mod's true internal identity from its *source folder name*, not the `.csproj`/namespace/`build.txt`, which is a real gotcha worth knowing before renaming anything again).
-- If merging ideas/assets with that other mod becomes concrete, treat it as a deliberate decision (architecture, roster overlap, licensing of contributed art) — don't silently absorb code from an external source without the human in the loop reviewing it first.
+- Development proceeds deliberately, one reviewed step at a time — no large unreviewed rewrites or silent architecture pivots.
+
+### Story / Narrative Design
+
+**Read [`docs/Story.md`](docs/Story.md) before writing anything that touches lore, campaign structure, boss-to-alien mapping, or Alien X.** It's a living document (actively being workshopped, expect revisions) covering the multiverse premise, the opening sequence, the Moon Lord antagonist plot, the alien acquisition mechanic (including Alien X's coin-flip *action*-gating — which does **not** gate acquiring him, only using him once transformed), and the post-game Anihilaarg superboss. Keep it up to date in the same pass as any story decision that changes.
 
 ### Controls
 
