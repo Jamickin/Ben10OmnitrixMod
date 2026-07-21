@@ -87,13 +87,20 @@ Defeating Wall of Flesh is a story turning point, not just a boss kill:
 
 ### Shared Dash (Ability 3 base template)
 
-Ability 3 defaults to a shared dash across the whole roster, with per-alien customization on top:
+Ability 3 is a real, universal shared ability for **every** alien, no exceptions — it is never repurposed into something else (like a flight toggle) for any specific alien. See "Flight" below for how aliens that can fly actually do so — it's a separate system entirely, not tied to Ability 3.
 
-- **2-second cooldown, always** — a strict constant for every alien, with no exceptions and no change at the hardmode upgrade. (Eye Guy's dash was briefly discussed at 4 seconds during design and was corrected back to the universal 2 seconds.)
-- **Every alien's dash deals damage by default** — the base is not purely a mobility tool, though the damage amount is tuned per alien (e.g. Goop's is intentionally very low, 8–12, since his dash leans on utility/defense rather than damage). An alien's hardmode upgrade can replace this default with a full behavior change instead (see Eye Guy).
+- **2-second cooldown, always** — a strict constant for every alien. (Eye Guy's dash was briefly discussed at 4 seconds during design and was corrected back to the universal 2 seconds; his dash was also briefly redesigned as a flight toggle and that has since been reverted too — see his entry below.)
+- **Every alien's dash deals damage, always** — never purely a mobility tool, though the damage amount is tuned per alien (e.g. Goop's is intentionally very low, 8–12, since his dash leans on utility/defense rather than damage).
 - Grants **full invulnerability** for the duration of the dash, by default.
 - Trajectory (arcing vs. straight-line) and whatever the dash visually reskins as are both per-alien.
 - Can be **chargeable** — holding before releasing extends/modifies the dash. What the charge actually does is unique per alien (e.g. Goop's charge makes the dash go further).
+
+### Flight (Native Mechanic)
+
+Aliens that can fly do so using **Terraria's native wing-flight input** — hold jump/spacebar while airborne to fly, which consumes a flight-time budget, and touching the ground recharges it back to full. This is completely separate from Ability 3/the dash; flight is never toggled through the dash key.
+
+- Each flying alien has its own max flight-time budget (seconds), covered by the general Azmuth Hardmode Upgrade's **×2 flight duration** rule like any other stat.
+- How generous that budget is depends entirely on how central flight is to that alien's identity — e.g. Eye Guy (flight is a bonus trait) gets a short, real budget; Stinkfly (flight is his whole identity) gets an effectively unlimited one. Decided per alien, not a single shared number.
 
 ## Boss → Alien Roster
 
@@ -103,8 +110,8 @@ The confirmed 18-boss progression backbone (pre-hardmode through Moon Lord), one
 2. Eye of Cthulhu → **Eye Guy** (Locked — see kit below)
 3. Eater of Worlds → **Armodrillo** (Locked — see kit below)
 4. Brain of Cthulhu → **Brainstorm** (Locked — see kit below)
-5. Queen Bee → TBD
-6. Skeletron → TBD
+5. Queen Bee → **Stinkfly** (Locked — see kit below)
+6. Skeletron → **Ghostfreak** (Locked — see kit below)
 7. Deerclops → TBD
 8. Wall of Flesh → TBD (**this kill also triggers the Azmuth story beat** — see "Transformation Mechanics" above; the alien unlock itself is separate from that)
 9. Queen Slime → TBD
@@ -134,11 +141,18 @@ Every alien gets a 3-ability kit (Ability 1 = left-click, Ability 2 = E, Ability
 - **Passive**: +15% crit chance pre-upgrade → +30% post-upgrade (general ×2 crit rule).
 - **Ability 1 (left-click) — Eye Beam**: hitscan beam (straight-line, not lobbed), 120 damage, 10 mana, 45-tick (0.75s) cooldown pre-upgrade → 180 damage, 15 mana post-upgrade (cooldown unchanged). Additionally scales with active summoned eyes (see Ability 2): **+15% damage per active eye, cumulative** — so with all 3 eyes active post-upgrade, that's +45% on top of the above.
 - **Ability 2 (E) — Eye Summon**: summons eye(s) that hold a static position above the player (matching player movement, not seeking targets independently), invulnerable, firing on their own. 1 eye pre-upgrade, dealing 45 damage every 60 ticks (1 sec) → 3 eyes post-upgrade, each dealing 90 damage every 60 ticks. Costs 20 mana to activate; once active, the summon lasts until the player reverts out of Eye Guy (no separate duration timer); pressing Ability 2 again while already active does nothing (not a refresh, no extra cost).
-- **Ability 3 (Q)** — shared dash: straight-line (not arcing), invulnerable, 15 damage, 2s cooldown pre-upgrade. **Post-upgrade this is a full behavior change, not a numeric scale-up**: the dash stops dealing damage entirely and becomes a sustained flight toggle instead (press to start flying, press again to stop; flight duration itself would double per the general rule if there were a pre-upgrade duration cap on it, but since post-upgrade flight is sustained/toggled rather than time-limited, the ×2 flight rule doesn't apply here — noting this so it isn't misread as a leftover TBD).
+- **Ability 3 (Q)** — shared dash: straight-line (not arcing), invulnerable, 15 damage, 2s cooldown pre-upgrade → ~23 damage post-upgrade (general ×1.5 rule), cooldown unchanged. *(Superseded an earlier design where this became a flight toggle post-upgrade — reverted once flight moved to the native fly-key mechanic below; the dash is a normal damage dash for him at all times.)*
+- **Flight**: separate from Ability 3 — uses the native fly-key mechanic (see "Flight" under Transformation Mechanics). A real but short budget, since flight is a bonus trait for him rather than his core identity: 1.3 seconds pre-upgrade → 2.6 seconds post-upgrade (general ×2 flight rule).
 
-### 3. Eater of Worlds → Armodrillo (alien confirmed, kit TBD)
+### 3. Eater of Worlds → Armodrillo (Locked)
 
-The Talpaedan species — canonical burrowing/tunneling specialist (drill-arms, digs through solid rock at speed), chosen over an earlier Wildvine pick specifically because burrowing is Eater of Worlds' most central, immediately recognizable trait in the actual fight (constantly tunneling in and out of blocks), stronger than Wildvine's segment-splitting parallel. Full numeric kit not yet designed.
+The Talpaedan species — canonical burrowing/tunneling specialist (drill-arms, digs through solid rock at speed), chosen over an earlier Wildvine pick specifically because burrowing is Eater of Worlds' most central, immediately recognizable trait in the actual fight (constantly tunneling in and out of blocks), stronger than Wildvine's segment-splitting parallel.
+
+- **Stats**: 160 HP, 180 Mana pre-upgrade — highest HP on the roster so far, leaning fully into "tank," with lower Mana reflecting a physical brawler rather than an ability-spam kit.
+- **Passive**: Immune to knockback — sheer bulk/sturdiness, a boolean immunity rather than another numeric stat (distinct from Goop's flat defense and Eye Guy's crit chance).
+- **Ability 1 (left-click) — Drill Punch**: melee, 130 damage, 12 mana, 60-tick (1s) cooldown. First melee-default Ability 1 on the roster (Goop/Eye Guy/Brainstorm are all ranged) — gives him a distinct close-range identity.
+- **Ability 2 (E) — Seismic Slam**: ground-pound AOE, damages and knocks back all nearby enemies (notable since he himself is immune to knockback), 140 damage, 25 mana, 150-tick (2.5s) cooldown.
+- **Ability 3 (Q) — Tunnel Dash**: shared dash reskinned as briefly burrowing underground and re-emerging further along — the dash's invulnerability doubles as literally being underground and untouchable. 15–20 damage, 2s cooldown (universal). Charge effect: emerging with a small shockwave burst dealing bonus AOE damage on arrival (rather than reusing Goop's "goes further").
 
 ### 4. Brain of Cthulhu → Brainstorm (Locked)
 
@@ -149,6 +163,27 @@ The Cerebrocrustacean species — crab-like body with a large exposed brain, ele
 - **Ability 1 (left-click) — Lightning Bolt**: 100 damage to primary target, chains to one additional nearby enemy for 50% (50) damage, 12 mana, 60-tick (1s) cooldown pre-upgrade → 200/100 damage (alien-specific ×2, not the general ×1.5), mana cost 18 (general ×1.5 default — not called out as an exception, flag if wrong), cooldown 66 ticks (alien-specific ×1.1).
 - **Ability 2 (E) — Telekinetic Nova**: pulse around him, damages and knocks back all nearby enemies, 120 damage, 20 mana, 150-tick (2.5s) cooldown pre-upgrade → 240 damage (×2), 30 mana (general ×1.5 default), 165-tick cooldown (×1.1).
 - **Ability 3 (Q)** — shared dash, reskinned as a short telekinetic teleport/blink (burst of electric arcs) rather than a physical dash: 12–15 damage, 2s cooldown pre-upgrade, charge effect leaves a residual damaging electric field at the departure point. Post-upgrade: 24–30 damage (×2), base teleport distance increases, cooldown 132 ticks / 2.2s (×1.1 — **an explicit exception to the "dash is always 2s, no exceptions" rule** written into the shared dash template above; noting the contradiction here deliberately rather than silently overriding it).
+
+### 5. Queen Bee → Stinkfly (Locked)
+
+The Lepidopterran species — a dragonfly/firefly-coded flying insectoid, one of the original 10 aliens from this project's pre-redesign standalone roster, kept on for the boss-tied roster too. Not a literal "bee" match (no canonical bee-specific Ben 10 alien exists) — picked as the strongest available flying-insect analog, and as a deliberate nod to the original 10.
+
+- **Stats**: 110 HP, 210 Mana pre-upgrade — agile/evasive rather than tanky, since flight and evasion already give him a defensive edge.
+- **Passive**: **Stinky** — enemies are less likely to target him (an aggro/threat-reduction effect), not damage mitigation or dodge. Distinct from every other locked alien's passive so far.
+- **Ability 1 (left-click) — Goo Spit**: ranged, 110 damage, applies a brief slow debuff on hit (−20% move speed, ~2 sec), 10 mana, 50-tick cooldown.
+- **Ability 2 (E) — Goo Bomb**: lobbed projectile, 100 damage on impact, leaves a sticky patch on the ground that continues slowing anything standing in it afterward — area denial, distinct from Ability 1's single-target poke.
+- **Ability 3 (Q) — Goo-Slick Dash**: shared dash, real damage like every alien's (8–12, Goop's range, since he's agile/utility rather than a hard hitter), invulnerable, 2s cooldown. Leaves a lingering slick/sticky trail that slows enemies who walk through it afterward, tying into his goo identity.
+- **Flight**: separate from Ability 3 — native fly-key mechanic, **effectively unlimited** flight-time budget. Flying is his core identity, not a bonus trait like Eye Guy's, so unlike Eye Guy he isn't meaningfully budget-constrained at all, pre- or post-upgrade.
+
+### 6. Skeletron → Ghostfreak (Locked)
+
+The Ectonurite species — intangible, invisible, capable of possession, deliberately picked over Frankenstrike (a closer literal "reanimated construct" analog) since it continues the "reuse an original 10 alien" pattern (like Stinkfly) and gives the strongest mechanically-distinct kit. Like Stinkfly, flight is core to his identity — **effectively unlimited flight-time budget**, no meaningful constraint pre- or post-upgrade, same treatment as Stinkfly rather than Eye Guy's limited version. He never walks.
+
+- **Stats**: 115 HP, 220 Mana pre-upgrade.
+- **Passive**: 15% chance to turn briefly intangible when hit, negating that hit entirely → **triples to 45% on Azmuth** (alien-specific exception, not the general no-blanket-formula default).
+- **Ability 1 (left-click) — Shadow Slash**: melee (not ranged — corrected from an earlier draft for canon accuracy), 115 damage, 10 mana, 55-tick cooldown. *Numbers carried over from the ranged-bolt draft, pending final confirmation now that it's melee.*
+- **Ability 2 (E) — Possession**: briefly take control of a non-boss enemy's body. Full piloting access to whatever that creature can natively do (attacks, movement, everything). Deals tick damage to the possessed creature the whole time: 15 damage per 30 ticks (0.5s) pre-upgrade → 120 damage per 60 ticks (1s) on Azmuth (a real per-second rate jump, ~30/sec → ~120/sec, not a clean multiplier — alien-specific, taken as intentional). Lasts 3 seconds pre-upgrade → 7.5 seconds on Azmuth (×2.5, alien-specific), cancelable at will. If the possessed creature dies while you're piloting it, heal 25% of Ghostfreak's own max HP pre-upgrade → 75% post-upgrade (percentage of his max HP, not a hardcoded number, so it scales automatically with his HP tuning). 115 mana to cast — a deliberately hefty cost, roughly half his pre-upgrade Mana pool, flagged as a placeholder to tune during actual playtesting. 15-second cooldown, unchanged at Azmuth (no scaling on the delay itself). **Documented fallback if possession turns out technically infeasible to build**: replace with an AOE scare effect instead, flavored as him tearing open his chest to reveal what's underneath (a classic show beat), frightening nearby enemies.
+- **Ability 3 (Q) — Phase Dash**: shared dash, full intangibility including phase-through-solid-objects; if the dash would end with him still inside a block, he keeps getting pushed forward automatically until clear of it (prevents getting stranded inside terrain). 12–15 damage on emergence, 2s cooldown (universal). Charge effect: extends how long he stays intangible/invisible after the dash ends, a lingering stealth window. *Numbers pending final confirmation, same as Ability 1.*
 
 ## Alien X
 
@@ -209,10 +244,10 @@ Easter eggs and nods throughout, in the spirit of the future-Ben Cannonbolt came
 
 ## Open Questions (not yet resolved)
 
-- Armodrillo's full numeric kit (alien pick is locked, stats/abilities are not).
-- Remaining 13 boss→alien pairings and kits (Queen Bee through Lunatic Cultist, plus Alien X's own kit numbers — see "Boss → Alien Roster" and "Alien X" above for progress; King Slime/Goop, Eye of Cthulhu/Eye Guy, and Brain of Cthulhu/Brainstorm are the only fully-numbered kits locked so far).
+- Remaining 12 boss→alien pairings and kits (Deerclops through Lunatic Cultist — see "Boss → Alien Roster" above for progress), plus Alien X's own kit numbers (his third ability is still open too — see "Alien X" above).
+- Ghostfreak's Ability 1 (Shadow Slash) and Ability 3 (Phase Dash) numbers need final confirmation now that Ability 1 changed from ranged to melee — see his entry above.
+- Ghostfreak's Possession (Ability 2) has a real technical feasibility risk (piloting an NPC's AI isn't free in tModLoader) — a fallback AOE scare effect is documented in his entry if it doesn't pan out.
 - Exact drain/regen rate for the post-Wall-of-Flesh continuous Omnitrix energy meter (the *model* is locked — see "Transformation Mechanics" — but not yet the actual numbers). Note this is separate from the per-alien Mana regen rate (5/60 ticks), which is resolved as a placeholder.
 - Gwen and Max's role beyond the opening RV scene — recurring companions/NPCs, or a one-scene appearance?
-- Alien X's third ability.
 - Panel placeholder-art plan for development before final art exists, and the technical format for panel content (image + text data, how a panel sequence is authored/triggered).
 - Whether Carnotrix stays parked permanently or gets revisited.
